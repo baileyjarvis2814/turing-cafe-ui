@@ -1,0 +1,21 @@
+.resy-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .resy-form input {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid teal;
+    border-radius: 5px;
+  }
+  
+  .resy-form button {
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

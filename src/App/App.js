@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import ReservationCard from '../ReservationCard/ReservationCard';
+import ReservationForm from '../ReservationForm/ReservationForm';
 
 
 function App() {
@@ -16,9 +17,14 @@ function App() {
     setReservations(data);
   };
 
+  const addReservation = (newReservation) => {
+    setReservations([...reservations, newReservation]);
+  };
+
   return (
     <div className="App">
       <h1 className='app-title'>Turing Cafe Reservations</h1>
+      <ReservationForm addReservation={addReservation} />
       <div className='resy-container'>
         {reservations.map(reservation => (
           <ReservationCard key={reservation.id} {...reservation} />
