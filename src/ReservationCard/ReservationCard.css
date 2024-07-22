@@ -1,0 +1,17 @@
+.resy-card {
+    background-color: white;
+    border: 1px solid teal;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .resy-card h2 {
+    margin: 10px 0;
+  }
+  
+  .resy-card p {
+    margin: 5px 0;
+  }
